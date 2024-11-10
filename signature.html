@@ -137,6 +137,11 @@
               href="tel:+9821480560001"
               >+98 21 48056 000</a
             >
+            |
+            <a style="text-decoration: none; color: #333" href="tel:+982196614"
+              >+98 21 966 14</a
+            >
+            <span id="tel"></span>
           </td>
         </tr>
         <tr>
@@ -182,10 +187,12 @@
     const name = urlParams.get("name") || "Name Family";
     const position = urlParams.get("position") || "Position";
     const mail = urlParams.get("mail") || "mail@parspooyesh.com";
+    const tel = urlParams.get("tel");
 
     document.getElementById("name").innerHTML = name;
     document.getElementById("position").innerHTML = position;
     document.getElementById("mail").innerHTML = mail;
     document.getElementById("mail").href = `mailto:${mail}`;
+    document.getElementById("tel").innerHTML = tel ? `| ${tel}` : "";
   </script>
 </html>
