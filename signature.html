@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html style="padding: 0; margin: 0; direction: ltr">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Parspooyesh Signature</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Manrope"
+      rel="stylesheet"
+    />
+  </head>
+  <body style="padding: 0; margin: 0">
+    <table
+      style="
+        height: 100px;
+        font-family: 'Manrope', monospace;
+        font-size: 12px;
+        color: #333;
+      "
+    >
+      <tbody>
+        <tr>
+          <td rowspan="6" style="border-right: 2px solid #e41c26">
+            <a href="https://parspooyesh.com">
+              <img
+                width="150"
+                height="150"
+                title="PARS POOYESH FANAVAR"
+                alt="PARS POOYESH FANAVAR"
+                src="https://remote.parspooyesh.com/pkg/pics/logo.png"
+            /></a>
+          </td>
+          <td style="align-content: start; padding: 0 8px">
+            <h1
+              id="name"
+              style="line-height: 1; margin: 0; font-size: 16px; color: black"
+            >
+              Mohsen Baqi
+            </h1>
+            <h2
+              id="position"
+              style="color: #e41c26; line-height: 1; margin: 0; font-size: 14px"
+            >
+              Front End Engineer
+            </h2>
+          </td>
+          <td style="align-content: start" rowspan="6">
+            <a
+              href="https://t.me/ParspooyeshFanAvar"
+              style="
+                border: 1px solid #333;
+                border-radius: 50%;
+                padding: 6px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin-bottom: 8px;
+              "
+              ><img
+                src="https://remote.parspooyesh.com/pkg/pics/telegram.png"
+                alt="Telegram"
+                title="Telegram"
+                width="16"
+                height="16"
+            /></a>
+            <a
+              href="https://www.linkedin.com/company/parspooyesh/"
+              style="
+                border: 1px solid #333;
+                border-radius: 50%;
+                padding: 6px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+              "
+              ><img
+                src="https://remote.parspooyesh.com/pkg/pics/linkedin.png"
+                alt="Linkedin"
+                title="Linkedin"
+                width="16"
+                height="16"
+            /></a>
+          </td>
+        </tr>
+        <tr>
+          <td
+            style="display: flex; align-items: center; gap: 4px; padding: 0 8px"
+          >
+            <img
+              src="https://remote.parspooyesh.com/pkg/pics/website.png"
+              alt="Website"
+              title="Website"
+              width="12"
+              height="12"
+            />
+            &nbsp; Website:
+            <a
+              style="text-decoration: none; color: #333"
+              href="https://parspooyesh.com"
+              >parspooyesh.com</a
+            >
+          </td>
+        </tr>
+        <tr>
+          <td
+            style="display: flex; align-items: center; gap: 4px; padding: 0 8px"
+          >
+            <img
+              src="https://remote.parspooyesh.com/pkg/pics/email.png"
+              alt="Mail"
+              title="Mail"
+              width="12"
+              height="12"
+            />
+            &nbsp; Mail:
+            <a
+              id="mail"
+              style="text-decoration: none; color: #333"
+              href="mailto:m.baghi@parspooyesh.com"
+              >m.baghi@parspooyesh.com</a
+            >
+          </td>
+        </tr>
+        <tr>
+          <td
+            style="display: flex; align-items: center; gap: 4px; padding: 0 8px"
+          >
+            <img
+              src="https://remote.parspooyesh.com/pkg/pics/tel.png"
+              alt="Tel"
+              title="Tel"
+              width="12"
+              height="12"
+            />
+            &nbsp; Tel:&nbsp;
+            <a
+              style="text-decoration: none; color: #333"
+              href="tel:+9821480560001"
+              >+98 21 48056 000</a
+            >
+          </td>
+        </tr>
+        <tr>
+          <td
+            style="display: flex; align-items: center; gap: 4px; padding: 0 8px"
+          >
+            <img
+              src="https://remote.parspooyesh.com/pkg/pics/fax.png"
+              alt="Fax"
+              title="Fax"
+              width="12"
+              height="12"
+            />
+            &nbsp; Fax:
+            <a
+              style="text-decoration: none; color: #333"
+              href="tel:+982148056789"
+              >+98 21 48056 789</a
+            >
+          </td>
+        </tr>
+        <tr>
+          <td
+            style="display: flex; align-items: center; gap: 4px; padding: 0 8px"
+          >
+            <img
+              src="https://remote.parspooyesh.com/pkg/pics/address.png"
+              alt="Address"
+              title="Address"
+              width="12"
+              height="12"
+            />
+            &nbsp; No. 1/1, 3rd Floor, Pak Building, Hajipour Amir St, Jalal
+            Al-Ahmad, Tehran
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+
+  <script>
+    const urlParams = new URLSearchParams(window.location.search);
+    const name = urlParams.get("name") || "Name Family";
+    const position = urlParams.get("position") || "Position";
+    const mail = urlParams.get("mail") || "mail@parspooyesh.com";
+
+    document.getElementById("name").innerHTML = name;
+    document.getElementById("position").innerHTML = position;
+    document.getElementById("mail").innerHTML = mail;
+    document.getElementById("mail").href = `mailto:${mail}`;
+  </script>
+</html>
